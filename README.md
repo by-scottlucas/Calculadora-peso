@@ -1,2 +1,3 @@
-# calculadora-peso-ideal
-Projeto pessoal de uma calculadora de peso ideal .
+# Calculadora de Peso Ideal
+Projeto pessoal de uma calculadora que calcula o peso ideal.
+
