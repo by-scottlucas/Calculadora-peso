@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang ="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <title>Calculadora de Peso Ideal</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="form">
+            <img src="icon.png" alt="Logo" class="item-imagem">
+    
+            <div class="input-group">
+
+                <p class="titulo">Calculadora</br>de Peso Ideal</p>
+
+                <div class="input-box">
+                    <label class="texto-escrita">Sexo</label>
+
+                    <input type="text" id="sexo" placeholder="Ex: Mulher">
+                </div>
+                </div>
+
+                <div class="input-box">
+                    <label class="texto-escrita">Idade</label>
+
+                    <input type="text" id="idade" placeholder="Ex: 24">
+                </div>
+
+                <div class="input-box">
+                    <label class="texto-escrita">Altura</label>
+
+                    <input type="text" id="altura" placeholder="Ex: 165">
+                </div>
+
+            </div>
+                <div class="botao-div">
+
+                    <button onclick="pesoIdeal()">Calcular</button>
+
+                </div>              
+    
+
+            <div class="result">
+
+                    <img src="icon.png" alt="Logo" class="item-imagem-result">            
+        
+                    <p class="titulo">Resultado</p>
+        
+                    <p id="resultado" class="resultado"></p>
+            
+            </div>
+
+        </div>
+
+    </div>
+
+<script>
+    function pesoIdeal(){
+
+		var sexo = document.getElementById("sexo").value;
+
+		var idade = parseInt(document.getElementById("idade").value);
+
+		var altura = parseInt(document.getElementById("altura").value);
+
+        var pesoMinMulher = altura - 110;
+        var pesoMaxMulher = pesoMinMulher + 15;
+
+        var pesoMinHomem = altura - 100;
+        var pesoMaxHomem = pesoMinHomem + 15;
+
+        var pesoMulher = pesoMinMulher + 7;
+        var pesoHomem = pesoMinHomem + 7;
+
+        if (sexo == 'Mulher' || 'mulher') {                        
+        document.getElementById("resultado").innerHTML = 'Seu peso ideal é ' + pesoMulher + 'kg. ' + 'No entanto, continua sendo considerado saudável se variar entre ' + pesoMinMulher + 'kg e ' + pesoMaxMulher + 'kg.'+ '<br><br> Caso você sinta que este resultado não se adequa ao seu biotipo é aconselhado que busque aconselhamento individual com um nutricionista ou um profissional de educação física, por exemplo, para fazer outras medições mais objetivas, como uma bioimpedância, para entender qual o peso que melhor se adequa para você.';
+        resultado.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        else{
+            if (sexo == 'Homem' || 'homem') {
+                document.getElementById("resultado").innerHTML = 'Seu peso ideal é ' + pesoHomem + 'kg. ' + 'No entanto, continua sendo considerado saudável se variar entre ' + pesoMinHomem + 'kg e ' + pesoMaxHomem + 'kg.' + '<br><br> caso você sinta que este resultado não se adequa ao seu biotipo é aconselhado que busque aconselhamento individual com um nutricionista ou um profissional de educação física, por exemplo, para fazer outras medições mais objetivas, como uma bioimpedância, para entender qual o peso que melhor se adequa para você.';
+                resultado.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }
+</script>
+</body>
+</html>
