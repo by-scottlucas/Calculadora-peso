@@ -6,43 +6,40 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
     <link rel="icon" href="icon.png">
-    <title>Calculadora de Peso Ideal</title>
+    <title>Calculadora de Peso</title>
 </head>
 <body>
     <div class="container">
 
         <div class="form">
-            <img src="icon.png" alt="Logo" class="item-imagem">
+            <img src="icon.png" alt="Logo" class="icon">
     
             <div class="input-group">
 
-                <p class="titulo">Calculadora</br>de Peso Ideal</p>
+                <p class="titulo">Calculadora de Peso</p>
 
                 <div class="input-box">
-                    <label class="texto-escrita">Sexo</label>
+                    <label class="titulo-input">Sexo</label>
 
-                    <div class="botoes">
-                        <button class="man">Homem</button>
-                        <button class="girl">Mulher</button>
-                    </div>
+                    <input type="text" id="sexo" placeholder="Ex: Homem" required>
 
                 </div>
                 </div>
 
                 <div class="input-box">
-                    <label class="texto-escrita">Idade</label>
+                    <label class="titulo-input">Idade</label>
 
-                    <input type="text" id="idade" placeholder="Ex: 24">
+                    <input type="number" id="idade" placeholder="Ex: 24" required>
                 </div>
 
                 <div class="input-box">
-                    <label class="texto-escrita">Altura</label>
+                    <label class="titulo-input">Altura</label>
 
-                    <input type="text" id="altura" placeholder="Ex: 165">
+                    <input type="number" id="altura" placeholder="Ex: 165" required>
                 </div>
 
             </div>
-                <div class="botao-div">
+                <div class="botao">
 
                     <button onclick="pesoIdeal()">Calcular</button>
 
@@ -51,7 +48,7 @@
 
             <div class="result" id="result" style="display: none;">
 
-                    <img src="icon.png" alt="Logo" class="item-imagem-result">            
+                    <img src="icon.png" alt="Logo" class="icon-result">            
         
                     <p class="titulo">Resultado</p>
         
