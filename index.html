@@ -19,9 +19,22 @@
                 <p class="titulo">Calculadora de Peso</p>
 
                 <div class="input-box">
+
                     <label class="titulo-input">Sexo</label>
 
-                    <input type="text" id="sexo" placeholder="Ex: Homem" required>
+                    <div class="sexo" id="sexo">
+
+                        <div class="sex">
+
+                            <input type="radio" name="sexo" id="feminino">
+    
+                            <div class="txt-sexo">
+                                <label for="feminino">Feminino</label>
+                            </div>
+
+                        </div>
+    
+                    </div>
 
                 </div>
                 </div>
@@ -41,7 +54,7 @@
             </div>
                 <div class="botao">
 
-                    <button onclick="pesoIdeal()">Calcular</button>
+                    <button onclick="pesoIdeal()" id="calcular">Calcular</button>
 
                 </div>              
     
@@ -62,10 +75,11 @@
     
     </div>
 
-<script>
-    function pesoIdeal(){
+<script src="index.js"></script>
 
-		var sexo = document.getElementById("sexo").value;
+<script>
+
+    function pesoIdeal(){
 
 		var idade = parseInt(document.getElementById("idade").value);
 
@@ -82,7 +96,7 @@
 
         var div = document.getElementById("result"); // exibir resultado
 
-        if (sexo == 'Mulher' || 'mulher') {                        
+        if (sexo == feminino) {                        
         document.getElementById("resultado").innerHTML = 'Seu peso ideal é ' + pesoMulher + 'kg. ' + 'No entanto, continua sendo considerado saudável se variar entre ' + pesoMinMulher + 'kg e ' + pesoMaxMulher + 'kg.'+ '<br><br> Caso você sinta que este resultado não se adequa ao seu biotipo é aconselhado que busque aconselhamento individual com um nutricionista ou um profissional de educação física, por exemplo, para fazer outras medições mais objetivas, como uma bioimpedância, para entender qual o peso que melhor se adequa para você.';
 
         div.style.display = "block";
@@ -91,7 +105,7 @@
         }
 
         else{
-            if (sexo == 'Homem' || 'homem') {
+            if (sexo == masculino) {
                 document.getElementById("resultado").innerHTML = 'Seu peso ideal é ' + pesoHomem + 'kg. ' + 'No entanto, continua sendo considerado saudável se variar entre ' + pesoMinHomem + 'kg e ' + pesoMaxHomem + 'kg.' + '<br><br> caso você sinta que este resultado não se adequa ao seu biotipo é aconselhado que busque aconselhamento individual com um nutricionista ou um profissional de educação física, por exemplo, para fazer outras medições mais objetivas, como uma bioimpedância, para entender qual o peso que melhor se adequa para você.';
 
                 div.style.display = "block";
