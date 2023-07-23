@@ -27,24 +27,27 @@ body{
 .sexo{
     margin: 0 auto;
     display: flex;
-    justify-content:space-between;
-    position: relative;
-    margin-bottom: 6px;
-    height: 46px;
 }
 
+.sex{
+    position: relative;
+    margin-bottom: 6px;
+    margin: 5px;
+    width: 100px;
+    height: 40px;
+}
 
-.sexo input{
+.sex input{
     margin: auto;
     position: absolute;
     height: 100%;
     width: 100%;
     cursor: pointer;
     z-index: 2;
-    opacity: 90%;
+    opacity: 80%;
 }
 
-.txt-sexo{
+.txt-sex{
     font-weight: 500;
     font-family: Calibri;
     font-size: 1.2rem;
@@ -52,7 +55,7 @@ body{
     color: #ffffff;
 }
 
-.sexo .txt-sexo{
+.sex .txt-sex{
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -60,12 +63,12 @@ body{
     align-items: center;
     height: 100%;
     width: 100%;
-    border-radius: 9px;
-    background-color: #3398c7;
+    border-radius: 6px;
+    background-color: #c73338;
 }
 
-input:checked + .txt-sexo{
-    background-color:#2179a1;
+input:checked + .txt-sex{
+    background-color:#850d11;
 }
 
 .result{
