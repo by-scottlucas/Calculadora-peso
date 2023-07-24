@@ -1,14 +1,15 @@
-let calcular = document.getElementById('calcular');
+function pesoIdeal() {
 
-function sexo(){
-         
+    let sexoSelecionado = [];
+
     let sexo = document.getElementsByName('sexo');
-    console.log(sexo)
-}
 
-calcular.addEventListener('click', sexo)
-
-/* function pesoIdeal(){
+    for (var i=0; i<sexo.length; i++) {
+        if (sexo[i].checked) {
+            console.log("o sexo selecionado foi " + sexo[i].value)
+            sexoSelecionado.push(sexo[i].value)
+        }
+    }
 
     var idade = parseInt(document.getElementById("idade").value);
 
@@ -25,7 +26,7 @@ calcular.addEventListener('click', sexo)
 
     var div = document.getElementById("result"); // exibir resultado
 
-    if (sexo == feminino) {                        
+    if (sexoSelecionado == 'feminino') {                        
     document.getElementById("resultado").innerHTML = 'Seu peso ideal é ' + pesoMulher + 'kg. ' + 'No entanto, continua sendo considerado saudável se variar entre ' + pesoMinMulher + 'kg e ' + pesoMaxMulher + 'kg.'+ '<br><br> Caso você sinta que este resultado não se adequa ao seu biotipo é aconselhado que busque aconselhamento individual com um nutricionista ou um profissional de educação física, por exemplo, para fazer outras medições mais objetivas, como uma bioimpedância, para entender qual o peso que melhor se adequa para você.';
 
     div.style.display = "block";
@@ -34,7 +35,7 @@ calcular.addEventListener('click', sexo)
     }
 
     else{
-        if (sexo == masculino) {
+        if (sexoSelecionado == 'masculino') {
             document.getElementById("resultado").innerHTML = 'Seu peso ideal é ' + pesoHomem + 'kg. ' + 'No entanto, continua sendo considerado saudável se variar entre ' + pesoMinHomem + 'kg e ' + pesoMaxHomem + 'kg.' + '<br><br> caso você sinta que este resultado não se adequa ao seu biotipo é aconselhado que busque aconselhamento individual com um nutricionista ou um profissional de educação física, por exemplo, para fazer outras medições mais objetivas, como uma bioimpedância, para entender qual o peso que melhor se adequa para você.';
 
             div.style.display = "block";
@@ -44,4 +45,3 @@ calcular.addEventListener('click', sexo)
     }
 
 }
-*/
