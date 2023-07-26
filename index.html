@@ -9,16 +9,22 @@
     <title>Calculadora de Peso</title>
 </head>
 <body>
-    <div class="container">
 
-        <div class="form">
-            <img src="icon.png" alt="Logo" class="icon">
+    <div class="container"> <!-- ABRINDO CONTAINER -->
+
+        <div class="form"> <!-- ABRINDO FORMULARIO -->
     
-            <div class="input-group">
+            <div class="input-group"> <!-- ABRINDO GRUPO COM INFORMAÇOES -->
 
-                <p class="titulo">Calculadora de Peso</p>
+                <div class="header-form"> <!-- ABRINDO GRUPO TITULO E LOGO -->
 
-                <div class="input-box">
+                    <img src="icon.png" alt="Logo" class="icon">
+
+                    <p class="titulo">Calculadora de Peso</p>
+
+                </div>
+
+                <div class="input-box-sexo"> <!-- ABRINDO INPUTS SEXO -->
 
                     <label class="titulo-input">Sexo</label>
 
@@ -26,7 +32,7 @@
 
                         <div class="sex">
 
-                            <input type="radio" name="sexo" id="feminino" value="feminino">
+                            <input type="radio" name="sexo" id="feminino" value="feminino" required>
     
                             <div class="txt-sex">
                                 <label for="feminino">Feminino</label>
@@ -36,7 +42,7 @@
 
                         <div class="sex">
 
-                            <input type="radio" name="sexo" id="masculino" value="masculino">
+                            <input type="radio" name="sexo" id="masculino" value="masculino" required>
     
                             <div class="txt-sex">
                                 <label for="masculino">Masculino</label>
@@ -46,44 +52,48 @@
 
                     </div>
 
-                </div>
-                </div>
+                </div> <!-- FECHANDO INPUTS SEXO -->
 
-                <div class="input-box">
-                    <label class="titulo-input">Idade</label>
+                <div class="idade-altura"> <!-- ABRINDO GRUPO DE IDADE E SEXO -->
 
-                    <input type="number" id="idade" placeholder="Ex: 24" required>
-                </div>
+                    <div class="input-box-idade"> <!-- ABRINDO INPUT IDADE -->
+                        <label class="titulo-input">Idade</label>
 
-                <div class="input-box">
-                    <label class="titulo-input">Altura</label>
+                        <input type="number" id="idade" placeholder="Ex: 24" required>
+                    </div> <!-- FECHANDO INPUT IDADE -->
 
-                    <input type="number" id="altura" placeholder="Ex: 165" required>
-                </div>
+                    <div class="input-box-altura"> <!-- ABRINDO INPUT ALTURA -->
+                        <label class="titulo-input">Altura</label>
 
-            </div>
-                <div class="botao">
+                        <input type="number" id="altura" placeholder="Ex: 165" required>
+                    </div> <!-- FECHANDO INPUT ALTURA -->
 
-                    <button onclick="pesoIdeal()" id="calcular">Calcular</button>
+                </div> <!-- FECHANDO GRUPO DE IDADE E SEXO -->
 
-                </div>              
+                <button onclick="pesoIdeal()" id="calcular">Calcular</button>
+
+            </div> <!-- FECHANDO GRUPO COM INFORMACOES  -->
+
+        </div> <!-- FECHANDO FORMULARIO -->
+
+        <div class="box-result" id="result" style="display: none;"> <!-- BOX QUE EXIBE RESULTADO -->
+
+            <div class="group-result">
     
-
-            <div class="result" id="result" style="display: none;">
-
-                    <img src="icon.png" alt="Logo" class="icon-result">            
-        
-                    <p class="titulo">Resultado</p>
-        
-                    <p id="resultado" class="resultado"></p>
-
-                    <br>
-            
-            </div>
-
-        </div>
+                <img src="icon.png" alt="Logo" class="icon-result">            
     
-    </div>
+                <p class="titulo">Resultado</p>
+    
+                <p id="resultado" class="resultado"></p>
+    
+            </div>
+    
+        </div> <!-- FECHANDO BOX QUE EXIBE RESULTADO -->
+
+    </div> <!-- FECHANDO CONTAINER -->
+
+    <footer class="footer">Criado por Lucas Scott | 2023 | Todos os direitos reservados.</footer>
+
 
 <script src="index.js"></script>
 
