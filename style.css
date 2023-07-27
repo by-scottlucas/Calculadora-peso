@@ -33,7 +33,7 @@ body{
     align-items: center;
     margin: 0 auto;
     width: 100%;
-    height: 96.4vh;
+    height: 100vh;
 }
 
 /* ESTILO, TAMANHO E POSICIONAMENTO DAS INFORMACOES DENTRO DO FORMULARIO */
@@ -42,7 +42,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 360px;
+    width: 300px;
     height: 500px;
     border-radius: 20px;
     box-shadow: 03px 04px 06px;
@@ -60,13 +60,13 @@ body{
 
 img{
     margin: 0 auto;
-    width: 130px;
-    margin-bottom: 10px;
+    width: 120px;
+    margin-bottom: 20px;
 }
 
 .titulo{
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-family: Bebas Neue;
     letter-spacing: 1px;
     color: #003866;
@@ -106,11 +106,12 @@ img{
     opacity: 0%;
 }
 
-.txt-sex{
-    font-weight: 500;
+.txt-sex label{
+    text-transform: uppercase;
+    font-weight: bold;
     font-family: Calibri;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
     color: #ffffff;
 }
 
@@ -119,9 +120,9 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 100%;
+    align-items:center;
     width: 100%;
+    height: 100%;
     border-radius: 6px;
     background-color:#003866;
 }
@@ -136,7 +137,7 @@ input:checked + .txt-sex{
     margin: 0 auto;
     display: flex;
     text-align: center;
-    width: 58%;
+    width: 70%;
 }
 
 .input-box-idade{
@@ -151,7 +152,7 @@ input:checked + .txt-sex{
 label{
     font-family: Bebas Neue;
     letter-spacing: 1px;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 input{
@@ -189,23 +190,39 @@ button{
 }
 
 .group-result{
-    transform: translateY(12%);
+    transform: translateY(30%);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 360px;
+    width: 300px;
     height: 500px;
     border-radius: 20px;
     box-shadow: 03px 04px 06px;
     background-color: #f1f1f1;
 }
 
+.header-result{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titulo-result{
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: Bebas Neue;
+    letter-spacing: 1px;
+    color: #003866;
+}
+
 .resultado{
     margin: 0 auto;
-    width: 300px;
-    height: auto;
+    width: 270px;
+    height: 380px;
     font-size: 1rem;
     font-family: Arial;
     text-align: justify;
@@ -222,4 +239,22 @@ button{
     height: auto;
     text-align: center;
     background-color: #003866;
+}
+
+/* Celulares */
+
+@media screen and (min-width: 280px) {
+
+}
+
+/* Tablets */
+
+@media screen and (min-width: 768px) {
+    
+}
+
+/* Desktops */
+
+@media screen and (min-width: 1024px) {
+    
 }
