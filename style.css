@@ -42,8 +42,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 300px;
-    height: 500px;
+    width: 85%;
+    height: 80%;
     border-radius: 20px;
     box-shadow: 03px 04px 06px;
     background-color: #f1f1f1;
@@ -60,7 +60,7 @@ body{
 
 img{
     margin: 0 auto;
-    width: 120px;
+    width: 38%;
     margin-bottom: 20px;
 }
 
@@ -91,8 +91,8 @@ img{
     margin-bottom: 6px;
     margin: 5px;
     width: 100px;
+    max-width: 100%;
     height: 40px;
-    margin-bottom: 12px;
 }
 
 .sex input{
@@ -136,17 +136,17 @@ input:checked + .txt-sex{
 .idade-altura{
     margin: 0 auto;
     display: flex;
+    justify-content: center;
     text-align: center;
-    width: 70%;
 }
 
 .input-box-idade{
-    margin-top: 10px;
+    display: grid;
     margin-right: 10px;
 }
 
 .input-box-altura{
-    margin-top: 10px;
+    display: grid;
 }
 
 label{
@@ -158,7 +158,7 @@ label{
 input{
     text-align: center;
     border: none;
-    width: 98px;
+    width: 100px;
     height: 40px;
     border-radius: 6px;
     margin-bottom: 20px;
@@ -186,18 +186,17 @@ button{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    margin-bottom: 80px;
 }
 
 .group-result{
-    transform: translateY(30%);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 500px;
+    width: 85%;
+    height: 80%;
     border-radius: 20px;
     box-shadow: 03px 04px 06px;
     background-color: #f1f1f1;
@@ -220,9 +219,10 @@ button{
 }
 
 .resultado{
+    padding-bottom: 30px;
     margin: 0 auto;
-    width: 270px;
-    height: 380px;
+    width: 82%;
+    height: auto;
     font-size: 1rem;
     font-family: Arial;
     text-align: justify;
@@ -242,15 +242,16 @@ button{
 }
 
 /* Celulares */
-
+/*
 @media screen and (min-width: 280px) {
 
-}
+}*/
 
 /* Tablets */
 
 @media screen and (min-width: 768px) {
-    
+
+
 }
 
 /* Desktops */
