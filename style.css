@@ -361,8 +361,48 @@ button{
 
 @media screen and (min-width: 1024px) {
 
-    body{
-        background-color: #008cff;
+    .input-group{
+        width: 18%;
+        height: 50vh;
     }
-    
+
+    .icon{
+        width: 100px;
+    }
+
+    .titulo{
+        font-size: 1.8em;
+    }
+
+    label{
+        font-size: 1.6rem;
+    }
+
+    .sex {
+        width: 100px;
+        height: 40px;
+    }
+
+    .sex input{
+        transform: translateX(-45px);
+    }
+
+    .txt-sex label {
+        font-size: 1rem;
+    }
+
+    .idade-altura {
+        width: 100%;
+    }
+
+    input{
+        width: 100px;
+        height: 40px;
+    }
+
+    button {
+        width: 100px;
+        height: 40px;
+        font-size: 1.2rem;
+    }   
 }

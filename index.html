@@ -12,23 +12,23 @@
 
     <main class="container"> <!-- ABRINDO CONTAINER -->
 
-        <article class="form"> <!-- ABRINDO FORMULARIO -->
+        <section class="form"> <!-- ABRINDO FORMULARIO -->
     
             <article class="input-group"> <!-- ABRINDO GRUPO COM INFORMAÇOES -->
 
-                <section class="header-form"> <!-- ABRINDO GRUPO TITULO E LOGO -->
+                <article class="header-form"> <!-- ABRINDO GRUPO TITULO E LOGO -->
 
                     <img src="src/icon.png" alt="Logo" class="icon">
 
                     <p class="titulo">Calculadora de Peso</p>
 
-                </section>
+                </article>
 
-                <section class="input-box-sexo"> <!-- ABRINDO INPUTS SEXO -->
+                <article class="input-box-sexo"> <!-- ABRINDO INPUTS SEXO -->
 
                     <label class="titulo-input">Sexo</label>
 
-                    <div class="sexo" id="sexo">
+                    <article class="sexo" id="sexo">
 
                         <div class="sex">
 
@@ -52,31 +52,31 @@
 
                     </div>
 
-                </section> <!-- FECHANDO INPUTS SEXO -->
+                    </article> <!-- FECHANDO INPUTS SEXO -->
 
                 <article class="idade-altura"> <!-- ABRINDO GRUPO DE IDADE E SEXO -->
 
-                    <section class="input-box-idade"> <!-- ABRINDO INPUT IDADE -->
+                    <div class="input-box-idade"> <!-- ABRINDO INPUT IDADE -->
                         <label class="titulo-input">Idade</label>
 
                         <input type="number" id="idade" placeholder="Ex: 24" required>
-                    </section> <!-- FECHANDO INPUT IDADE -->
+                    </div> <!-- FECHANDO INPUT IDADE -->
 
-                    <section class="input-box-altura"> <!-- ABRINDO INPUT ALTURA -->
+                    <div class="input-box-altura"> <!-- ABRINDO INPUT ALTURA -->
                         <label class="titulo-input">Altura</label>
 
                         <input type="number" id="altura" placeholder="Ex: 165" required>
-                    </section> <!-- FECHANDO INPUT ALTURA -->
+                    </div> <!-- FECHANDO INPUT ALTURA -->
 
                 </article> <!-- FECHANDO GRUPO DE IDADE E SEXO -->
 
                 <button onclick="pesoIdeal()" id="calcular">Calcular</button>
 
-            </article> <!-- FECHANDO GRUPO COM INFORMACOES  -->
+                </article> <!-- FECHANDO GRUPO COM INFORMACOES  -->
 
-        </article> <!-- FECHANDO FORMULARIO -->
+        </section> <!-- FECHANDO FORMULARIO -->
 
-        <article class="box-result" id="result" style="display: none;"> <!-- BOX QUE EXIBE RESULTADO -->
+        <section class="box-result" id="result" style="display: none;"> <!-- BOX QUE EXIBE RESULTADO -->
 
             <section class="group-result">
 
@@ -92,7 +92,7 @@
     
             </section>
     
-        </article> <!-- FECHANDO BOX QUE EXIBE RESULTADO -->
+        </section> <!-- FECHANDO BOX QUE EXIBE RESULTADO -->
 
         <footer class="footer">Criado por Lucas Scott | 2023</footer>
 
