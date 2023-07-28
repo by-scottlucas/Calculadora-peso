@@ -15,12 +15,13 @@ html{
 /* COR DE FUNDO DA PÁGINA */
 
 body{
-    background-color:#ffffff;
+    background-color: whitesmoke;
 }
 
 /* TAMANHO DO CONTAINER QUE ARMAZENA TODAS AS INFORMACOES DA PÁGINA */
 
 .container{
+    margin: 0 auto;
     height: 100vh;
     width: 100%;
 }
@@ -44,9 +45,7 @@ body{
     flex-direction: column;
     justify-content: center;
     width: 70%;
-    max-width: 70%;
     height: 60%;
-    max-height: 60%;
     border-radius: 20px;
     box-shadow: 03px 04px 06px;
     background-color: #f1f1f1;
@@ -55,21 +54,25 @@ body{
 /* CABEÇALHO COM LOGO E TITULO DO FORMULARIO */
 
 .header-form{
-    margin: 0 auto;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 10px;
 }
 
 img{
+    height: auto;
+    max-width: 100%;
+}
+
+.icon{
     margin: 0 auto;
-    width: 38%;
-    max-width: 38%;
-    margin-bottom: 10px;
+    width: 100px;
+    margin-bottom: 20px;
 }
 
 .titulo{
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-family: Bebas Neue;
     letter-spacing: 1px;
     color: #003866;
@@ -107,10 +110,11 @@ img{
     width: 100%;
     cursor: pointer;
     z-index: 2;
-    opacity: 0%;
+    opacity: 40%;
 }
 
 .txt-sex label{
+    padding: 1px;
     text-transform: uppercase;
     font-weight: bold;
     font-family: Calibri;
@@ -217,15 +221,7 @@ button{
     margin-bottom: 10px;
 }
 
-.titulo-result{
-    text-align: center;
-    font-size: 1.6rem;
-    font-family: Bebas Neue;
-    letter-spacing: 1px;
-    color: #003866;
-}
-
-.resultado{
+.result{
     padding-bottom: 30px;
     margin: 0 auto;
     width: 90%;
@@ -250,7 +246,7 @@ button{
 
 /* Celulares */
 
-@media screen and (max-width: 280px) {
+/* @media screen and (min-width: 280px) {
 
     .form{
         height: 96.5vh;
@@ -296,38 +292,77 @@ button{
         font-size: 0.8rem;
     }
 
-}
+} */
+
 
 /* Tablets */
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 540px) {
 
-    body{
-        background-color: yellowgreen;
+    .input-group{
+        padding: 40px;
+        width: 55%;
+        height: 80vw;
     }
+}
+
+@media screen and (min-width: 768px) {
+
 
     .input-group{
         padding: 100px;
-        width: 50%;
+        width: 55%;
+        height: 80vw;
     }
 
-    .sexo{
-        display: flexbox;
-        margin: 0 auto;
-        width: 100%;
-        background-color: #008cff;
-    }
-
-    .sex{
+    .icon{
         width: 200px;
     }
 
+    .titulo{
+        font-size: 2.5em;
+    }
 
+    label{
+        font-size: 2rem;
+    }
 
-} */
+    .sex {
+        width: 200px;
+        height: 60px;
+    }
+
+    .sex input{
+        transform: translateX(-100px);
+    }
+
+    .txt-sex label {
+        font-size: 1.5rem;
+    }
+
+    .idade-altura {
+        width: 100%;
+    }
+
+    input{
+        width: 200px;
+        height: 50px;
+    }
+
+    button {
+        width: 200px;
+        height: 50px;
+        font-size: 1.4rem;
+    }
+
+}
 
 /* Desktops */
 
 @media screen and (min-width: 1024px) {
+
+    body{
+        background-color: #008cff;
+    }
     
 }
