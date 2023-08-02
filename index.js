@@ -11,20 +11,20 @@ function pesoIdeal() {
         }
     }
 
-    var idade = parseInt(document.getElementById("idade").value);
+    let idade = parseInt(document.getElementById("idade").value);
 
-    var altura = parseInt(document.getElementById("altura").value);
+    let altura = parseInt(document.getElementById("altura").value);
 
-    var pesoMinMulher = altura - 110;
-    var pesoMaxMulher = pesoMinMulher + 15;
+    let pesoMinMulher = altura - 110;
+    let pesoMaxMulher = pesoMinMulher + 15;
 
-    var pesoMinHomem = altura - 100;
-    var pesoMaxHomem = pesoMinHomem + 15;
+    let pesoMinHomem = altura - 100;
+    let pesoMaxHomem = pesoMinHomem + 15;
 
-    var pesoMulher = pesoMinMulher + 7;
-    var pesoHomem = pesoMinHomem + 7;
+    let pesoMulher = pesoMinMulher + 7;
+    let pesoHomem = pesoMinHomem + 7;
 
-    var div = document.getElementById("result"); // exibir resultado
+    let div = document.getElementById("result"); // exibir resultado
 
     if (sexoSelecionado == 'feminino') {                        
     document.getElementById("resultado").innerHTML = 'Seu peso ideal é ' + pesoMulher + 'kg. ' + 'No entanto, continua sendo considerado saudável se variar entre ' + pesoMinMulher + 'kg e ' + pesoMaxMulher + 'kg.'+ '<br><br> Caso você sinta que este resultado não se adequa ao seu biotipo é aconselhado que busque aconselhamento individual com um nutricionista ou um profissional de educação física, por exemplo, para fazer outras medições mais objetivas, como uma bioimpedância, para entender qual o peso que melhor se adequa para você.';

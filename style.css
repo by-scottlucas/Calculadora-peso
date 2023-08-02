@@ -110,7 +110,7 @@ img{
     width: 100%;
     cursor: pointer;
     z-index: 2;
-    opacity: 40%;
+    opacity: 0%;
 }
 
 .txt-sex label{
@@ -361,9 +361,18 @@ button{
 
 @media screen and (min-width: 1024px) {
 
+    .container{
+        width: 100%;
+    }
+
+    .form{
+        width: 38%;
+        height: 96.5vh;
+    }
+
     .input-group{
-        width: 18%;
-        height: 50vh;
+        padding: 50px;
+        height: auto;
     }
 
     .icon{
@@ -402,7 +411,17 @@ button{
 
     button {
         width: 100px;
-        height: 40px;
-        font-size: 1.2rem;
-    }   
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    .box-result{
+        width: 38%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .group-result{
+        height: auto;
+    }
 }
