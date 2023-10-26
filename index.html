@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-<html lang ="pt-br">
+<html lang="pt-br">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="medias.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <!-- <link rel="stylesheet" href="/styles/medias.css"> -->
     <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
-    <link rel="icon" href="src/icon.png">
+    <link rel="icon" href="assets/icon.png">
     <title>Calculadora de Peso</title>
 </head>
+
 <body>
 
-    <main class="container"> <!-- ABRINDO CONTAINER -->
+    <main class="container">
 
-        <section class="form"> <!-- ABRINDO FORMULARIO -->
-    
-            <article class="input-group"> <!-- ABRINDO GRUPO COM INFORMAÇOES -->
+        <section class="form">
 
-                <article class="header-form"> <!-- ABRINDO GRUPO TITULO E LOGO -->
+            <article class="input-group">
 
-                    <img src="src/icon.png" alt="Logo" class="icon">
+                <article class="header-form">
 
-                    <p class="titulo">Calculadora de Peso</p>
+                    <img src="assets/icon.png" alt="Logo" class="icon">
+
+                    <h1 class="titulo">Calculadora de Peso</h1>
 
                 </article>
 
-                <article class="input-box-sexo"> <!-- ABRINDO INPUTS SEXO -->
+                <article class="input-box-sexo">
 
                     <label class="titulo-input">Sexo</label>
 
@@ -34,9 +36,11 @@
                         <div class="sex">
 
                             <input type="radio" name="sexo" id="feminino" value="feminino" required>
-    
+
                             <div class="txt-sex">
+
                                 <label for="feminino">Feminino</label>
+
                             </div>
 
                         </div>
@@ -44,63 +48,69 @@
                         <div class="sex">
 
                             <input type="radio" name="sexo" id="masculino" value="masculino" required>
-    
+
                             <div class="txt-sex">
+
                                 <label for="masculino">Masculino</label>
+
                             </div>
 
                         </div>
 
-                    </div>
+                        </div>
 
-                    </article> <!-- FECHANDO INPUTS SEXO -->
+                    </article>
 
-                <article class="idade-altura"> <!-- ABRINDO GRUPO DE IDADE E SEXO -->
+                    <article class="idade-altura">
 
-                    <div class="input-box-idade"> <!-- ABRINDO INPUT IDADE -->
-                        <label class="titulo-input">Idade</label>
+                        <div class="input-box-idade">
 
-                        <input type="number" id="idade" placeholder="Ex: 24" required>
-                    </div> <!-- FECHANDO INPUT IDADE -->
+                            <label class="titulo-input">Idade</label>
 
-                    <div class="input-box-altura"> <!-- ABRINDO INPUT ALTURA -->
-                        <label class="titulo-input">Altura</label>
+                            <input type="number" id="idade" placeholder="Ex: 24" required>
 
-                        <input type="number" id="altura" placeholder="Ex: 165" required>
-                    </div> <!-- FECHANDO INPUT ALTURA -->
+                        </div>
 
-                </article> <!-- FECHANDO GRUPO DE IDADE E SEXO -->
+                        <div class="input-box-altura">
 
-                <button onclick="pesoIdeal()" id="calcular">Calcular</button>
+                            <label class="titulo-input">Altura</label>
 
-                </article> <!-- FECHANDO GRUPO COM INFORMACOES  -->
+                            <input type="number" id="altura" placeholder="Ex: 165" required>
 
-        </section> <!-- FECHANDO FORMULARIO -->
+                        </div>
 
-        <section class="box-result" id="result" style="display: none;"> <!-- BOX QUE EXIBE RESULTADO -->
+                    </article>
+
+                    <button onclick="pesoIdeal()" id="calcular">Calcular</button>
+
+                </article>
+
+        </section>
+
+        <section class="box-result" id="result" style="display: none;">
 
             <section class="group-result">
 
                 <div class="header-result">
 
-                    <img src="src/icon.png" alt="Logo" class="icon">            
-    
-                    <p class="titulo">Resultado</p>
+                    <img src="assets/icon.png" alt="Logo" class="icon">
+
+                    <h1 class="titulo">Resultado</h1>
 
                 </div>
-    
+
                 <p id="resultado" class="result"></p>
-    
+
             </section>
-    
-        </section> <!-- FECHANDO BOX QUE EXIBE RESULTADO -->
+
+        </section>
 
         <footer class="footer">Criado por Lucas Scott | 2023</footer>
 
-    </main> <!-- FECHANDO CONTAINER -->
+    </main>
 
-
-<script src="index.js"></script>
+    <script src="scripts/script.js"></script>
 
 </body>
+
 </html>
