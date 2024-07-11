@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="/styles/style.css">
-    <!-- <link rel="stylesheet" href="/styles/medias.css"> -->
     <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
     <link rel="icon" href="assets/icon.png">
     <title>Calculadora de Peso</title>
@@ -15,92 +14,85 @@
 
     <main class="container">
 
-        <section class="form-box">
+        <section class="calculator-form">
 
+            <div class="calculator-container">
 
-            <div class="form-header">
+                <div class="form-header">
 
-                <img src="./assets/icon.png" alt="Logo" class="form-header-icon">
+                    <img src="./assets/icon.png" alt="Logo" class="header-icon">
 
-                <h1 class="form-header-title">
-                    Calculadora de Peso
-                </h1>
+                    <h1 class="header-title">Calculadora de Peso</h1>
 
-            </div>
+                </div>
 
-            <div class="input-group group-sexo">
+                <div class="input-group gender-group">
 
-                <label class="title-sex">Sexo</label>
+                    <label class="gender-title">Sexo</label>
 
-                <div class="sex-buttons" id="sexo">
+                    <div class="gender-buttons" id="gender">
 
-                    <div class="sex-btn">
+                        <div class="gender-option">
 
-                        <input type="radio" name="sexo" id="feminino" value="feminino" required>
+                            <input type="radio" name="gender" id="female" class="gender-input" value="feminino"
+                                required>
+                            <label for="female" class="gender-label">Feminino</label>
 
-                        <div class="label-sex-btn">
-                            <label for="feminino">Feminino</label>
+                        </div>
+
+                        <div class="gender-option">
+
+                            <input type="radio" name="gender" id="male" class="gender-input" value="masculino" required>
+                            <label for="male" class="gender-label">Masculino</label>
+
                         </div>
 
                     </div>
 
-                    <div class="sex-btn">
+                </div>
 
-                        <input type="radio" name="sexo" id="masculino" value="masculino" required>
+                <div class="input-group">
 
-                        <div class="label-sex-btn">
-                            <label for="masculino">Masculino</label>
-                        </div>
+                    <div class="input-box age-box">
+
+                        <label for="age" class="input-label">Idade</label>
+                        <input type="number" id="age" class="input-field" placeholder="Ex: 24" required>
+
+                    </div>
+
+                    <div class="input-box height-box">
+
+                        <label for="height" class="input-label">Altura</label>
+                        <input type="number" id="height" class="input-field" placeholder="Ex: 165" required>
 
                     </div>
 
                 </div>
 
-            </div>
-
-            <div class="input-group">
-
-                <div class="input-box-idade">
-
-                    <label class="titulo-input">Idade</label>
-
-                    <input type="number" id="idade" placeholder="Ex: 24" required>
-
-                </div>
-
-                <div class="input-box-altura">
-
-                    <label class="titulo-input">Altura</label>
-
-                    <input type="number" id="altura" placeholder="Ex: 165" required>
-
-                </div>
+                <button onclick="calcularPesoIdeal()" id="calculate-button">Calcular</button>
 
             </div>
-
-            <button onclick="pesoIdeal()" id="calcular">
-                Calcular
-            </button>
 
         </section>
 
-        <!-- <section class="result-box" id="result" style="display: none;">
+        <section class="results-section" id="results" style="display: none;">
 
-            <section class="group-result">
+            <div class="results-container">
 
-                <div class="header-result">
+                <div class="results-header">
 
-                    <img src="assets/icon.png" alt="Logo" class="icon">
+                    <img src="./assets/icon.png" alt="Logo" class="results-icon">
 
-                    <h1 class="titulo">Resultado</h1>
+                    <h1 class="results-title">Resultado</h1>
 
                 </div>
 
-                <p id="resultado" class="result"></p>
+                <p id="results-text" class="results-text">asdasdasda</p>
 
-            </section>
+            </div>
 
-        </section> -->
+        </section>
+
 
         <!-- <footer class="footer">
             Criado por Lucas Scott | 2023
