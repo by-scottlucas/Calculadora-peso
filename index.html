@@ -15,79 +15,76 @@
 
     <main class="container">
 
-        <section class="form">
+        <section class="form-box">
 
-            <article class="input-group">
 
-                <article class="header-form">
+            <div class="form-header">
 
-                    <img src="assets/icon.png" alt="Logo" class="icon">
+                <img src="./assets/icon.png" alt="Logo" class="form-header-icon">
 
-                    <h1 class="titulo">Calculadora de Peso</h1>
+                <h1 class="form-header-title">
+                    Calculadora de Peso
+                </h1>
 
-                </article>
+            </div>
 
-                <article class="input-box-sexo">
+            <div class="input-group group-sexo">
 
-                    <label class="titulo-input">Sexo</label>
+                <label class="title-sex">Sexo</label>
 
-                    <article class="sexo" id="sexo">
+                <div class="sex-buttons" id="sexo">
 
-                        <div class="sex">
+                    <div class="sex-btn">
 
-                            <input type="radio" name="sexo" id="feminino" value="feminino" required>
+                        <input type="radio" name="sexo" id="feminino" value="feminino" required>
 
-                            <div class="txt-sex">
-
-                                <label for="feminino">Feminino</label>
-
-                            </div>
-
+                        <div class="label-sex-btn">
+                            <label for="feminino">Feminino</label>
                         </div>
 
-                        <div class="sex">
+                    </div>
 
-                            <input type="radio" name="sexo" id="masculino" value="masculino" required>
+                    <div class="sex-btn">
 
-                            <div class="txt-sex">
+                        <input type="radio" name="sexo" id="masculino" value="masculino" required>
 
-                                <label for="masculino">Masculino</label>
-
-                            </div>
-
+                        <div class="label-sex-btn">
+                            <label for="masculino">Masculino</label>
                         </div>
 
-                        </div>
+                    </div>
 
-                    </article>
+                </div>
 
-                    <article class="idade-altura">
+            </div>
 
-                        <div class="input-box-idade">
+            <div class="input-group">
 
-                            <label class="titulo-input">Idade</label>
+                <div class="input-box-idade">
 
-                            <input type="number" id="idade" placeholder="Ex: 24" required>
+                    <label class="titulo-input">Idade</label>
 
-                        </div>
+                    <input type="number" id="idade" placeholder="Ex: 24" required>
 
-                        <div class="input-box-altura">
+                </div>
 
-                            <label class="titulo-input">Altura</label>
+                <div class="input-box-altura">
 
-                            <input type="number" id="altura" placeholder="Ex: 165" required>
+                    <label class="titulo-input">Altura</label>
 
-                        </div>
+                    <input type="number" id="altura" placeholder="Ex: 165" required>
 
-                    </article>
+                </div>
 
-                    <button onclick="pesoIdeal()" id="calcular">Calcular</button>
+            </div>
 
-                </article>
+            <button onclick="pesoIdeal()" id="calcular">
+                Calcular
+            </button>
 
         </section>
 
-        <section class="box-result" id="result" style="display: none;">
+        <!-- <section class="result-box" id="result" style="display: none;">
 
             <section class="group-result">
 
@@ -103,9 +100,11 @@
 
             </section>
 
-        </section>
+        </section> -->
 
-        <footer class="footer">Criado por Lucas Scott | 2023</footer>
+        <!-- <footer class="footer">
+            Criado por Lucas Scott | 2023
+        </footer> -->
 
     </main>
 
